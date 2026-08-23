@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sputnik | Landing Pages & Automação de Atendimento</title>
+  <meta name="description"
+    content="Sputnik é um estúdio freelancer especializado em Landing Pages de alta conversão e automação de atendimento via n8n e WhatsApp para pequenos e médios negócios.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sputnik | Landing Pages & Automação de Atendimento">
+  <meta property="og:description"
+    content="Criamos experiências digitais que orbitam entre design e conversão. Landing Pages de alto padrão e automações inteligentes para seu negócio.">
+  <meta property="og:image" content="./images/astronauta-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/astronauta-logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="cosmic-bg" aria-hidden="true"></div>
+  <canvas id="space-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div class="container">
+      <nav aria-label="Navegação principal">
+        <a href="#" class="logo" aria-label="Sputnik - Voltar ao topo">
+          <img src="./images/astronauta-logo.png" alt="" class="logo-icon" aria-hidden="true">
+          SPUTNIK<span class="logo-dot">.</span>
+          <span class="logo-pulse" aria-hidden="true"></span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#projetos" class="nav-link" data-magnetic>Projetos</a></li>
+          <li><a href="#servicos" class="nav-link" data-magnetic>Especialidades</a></li>
+          <li><a href="#contato" class="nav-link" data-magnetic>Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn-orange" id="nav-cta">Iniciar Missão</a>
+        <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav"
+          id="mobile-menu-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+        <li><a href="#servicos" class="mobile-nav-link">Especialidades</a></li>
+        <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+        <li><a href="#contato" class="btn btn-orange" style="text-align:center;display:block;">Iniciar Missão</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="status-badge" role="status">
+              <span class="dot" aria-hidden="true"></span>
+              <span>DISPONÍVEL PARA NOVOS PROJETOS</span>
+            </div>
+            <h1 class="hero-title" id="hero-title">
+              Criando experiências digitais que <span class="gradient-text">orbitam entre design e conversão.</span>
+            </h1>
+            <p class="hero-desc">
+              Especialista no desenvolvimento de Landing Pages de alta performance e automações inteligentes para
+              alavancar seu negócio.
+            </p>
+            <div class="hero-actions">
+              <a href="#projetos" class="btn btn-orange" id="hero-cta-projects">Ver Projetos</a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="btn btn-glass"
+                id="hero-cta-whatsapp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                  style="vertical-align:middle;margin-right:6px;">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 2.126.549 4.12 1.509 5.853L.017 24l6.302-1.642A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.056-1.404l-.361-.218-3.741.974.997-3.648-.236-.374A9.786 9.786 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z" />
+                </svg>
+                Falar no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="astronaut-container" aria-hidden="true">
+            <div class="astronaut-glow"></div>
+            <div class="orbit-ring orbit-ring-1"></div>
+            <div class="orbit-ring orbit-ring-2"></div>
+            <img src="./images/astronauta-logo.png" alt="Mascote astronauta Sputnik flutuando" class="astronaut-img"
+              width="420" height="420">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section class="projects-section reveal-section" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">// PORTFÓLIO EM ÓRBITA</span>
+          <h2 class="section-title" id="projects-title">Projetos Selecionados</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card reveal-card" aria-label="Projeto: Buffet Hot Dog Gourmet">
+            <div class="card-image-wrap">
+              <img src="./images/print-buffet-hotdog.png" alt="Screenshot da Landing Page Buffet Hot Dog Gourmet"
+                class="project-img" loading="lazy" onerror="this.style.display='none'">
+              <div class="card-overlay" aria-hidden="true">
+                <span class="preview-badge">Visualizar Projeto ↗</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <span class="category-tag">Gastronomia &amp; Eventos</span>
+              <h3 class="card-headline">Buffet Hot Dog Gourmet</h3>
+              <p class="card-description">Landing page moderna de alta conversão com Hero dinâmico, vitrine de cardápio
+                e botão integrado de orçamento.</p>
+              <div class="tech-stack">
+                <span>UI/UX</span>
+                <span>HTML/CSS</span>
+                <span>Alta Conversão</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-card" aria-label="Projeto: Sistema de Atendimento Ágil">
+            <div class="card-image-wrap">
+              <img src="./images/print-projeto-2.png" alt="Screenshot do Sistema de Atendimento Ágil"
+                class="project-img" loading="lazy" onerror="this.style.display='none'">
+              <div class="card-overlay" aria-hidden="true">
+                <span class="preview-badge">Visualizar Projeto ↗</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <span class="category-tag">Automação &amp; SaaS</span>
+              <h3 class="card-headline">Sistema de Atendimento Ágil</h3>
+              <p class="card-description">Página de captação interligada a fluxo do n8n e WhatsApp para qualificação
+                instantânea de clientes.</p>
+              <div class="tech-stack">
+                <span>Landing Page</span>
+                <span>n8n</span>
+                <span>WhatsApp API</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ESPECIALIDADES / SERVIÇOS ========== -->
+    <section class="services reveal-section" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">// ESPECIALIDADES</span>
+          <h2 class="section-title" id="services-title">O que construo</h2>
+        </div>
+        <div class="grid-cards">
+
+          <div class="card card-highlight reveal-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <span class="card-tag">// ESPECIALIDADE PRINCIPAL</span>
+            <h3 class="card-title">Landing Pages de Alta Performance</h3>
+            <p class="card-desc">UI/UX responsivo com foco total em conversão. Carregamento ultrarrápido,
+              microinterações fluidas e psicologia de vendas aplicada — para gastronomia gourmet, tecnologia e serviços.
+            </p>
+            <ul class="card-features" aria-label="Recursos">
+              <li><span class="feature-dot" aria-hidden="true"></span>Design responsivo mobile-first</li>
+              <li><span class="feature-dot" aria-hidden="true"></span>Otimização de CRO e SEO</li>
+              <li><span class="feature-dot" aria-hidden="true"></span>Animações e microinterações</li>
+              <li><span class="feature-dot" aria-hidden="true"></span>Integração com WhatsApp &amp; CRM</li>
+            </ul>
+          </div>
+
+          <div class="card card-terminal reveal-card">
+            <div class="card-icon card-icon-cyan" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <span class="card-tag" style="color: #00F0FF;">// FLUXOS INTELIGENTES</span>
+            <h3 class="card-title">Automação &amp; Integrações</h3>
+            <p class="card-desc">Fluxos no n8n, bots de WhatsApp e atendimento comercial automatizado. Reduza o tempo de
+              resposta e aumente a qualificação de leads sem aumentar a equipe.</p>
+            <ul class="card-features" aria-label="Recursos">
+              <li><span class="feature-dot feature-dot-cyan" aria-hidden="true"></span>Fluxos n8n personalizados</li>
+              <li><span class="feature-dot feature-dot-cyan" aria-hidden="true"></span>Bot WhatsApp de qualificação</li>
+              <li><span class="feature-dot feature-dot-cyan" aria-hidden="true"></span>Integração com CRMs e APIs</li>
+              <li><span class="feature-dot feature-dot-cyan" aria-hidden="true"></span>Orçamentos automáticos</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER / CONTATO ========== -->
+  <footer class="footer reveal-section" id="contato" aria-labelledby="contact-title">
+    <div class="footer-stars" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-cta">
+          <span class="eyebrow">// PRONTO PARA DECOLAR?</span>
+          <h2 class="footer-title" id="contact-title">
+            Vamos colocar seu projeto <span class="gradient-text">em órbita?</span>
+          </h2>
+          <p class="footer-desc">Conte sobre seu projeto — responderei em até 24h com uma proposta personalizada.</p>
+          <div class="footer-actions">
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="btn btn-orange"
+              id="footer-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                style="vertical-align:middle;margin-right:8px;">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.126.549 4.12 1.509 5.853L.017 24l6.302-1.642A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.056-1.404l-.361-.218-3.741.974.997-3.648-.236-.374A9.786 9.786 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z" />
+              </svg>
+              Chamar no WhatsApp
+            </a>
+            <a href="mailto:ola@sputnik.studio" class="btn btn-glass" id="footer-email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                style="vertical-align:middle;margin-right:8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Enviar E-mail
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-orbit-astro" aria-hidden="true">
+          <div class="footer-astro-glow"></div>
+          <img src="./images/astronauta-logo.png" alt="" class="footer-astro-img" loading="lazy">
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <img src="./images/astronauta-logo.png" alt="" class="footer-logo-icon" aria-hidden="true">
+          <span class="footer-wordmark">SPUTNIK<span class="logo-dot">.</span></span>
+        </div>
+        <nav class="social-links" aria-label="Redes sociais">
+          <a href="#" class="social-link" aria-label="Instagram da Sputnik">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub da Sputnik">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Behance da Sputnik">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M0 7.356v9.288h5.143c.951 0 1.713-.102 2.302-.303.587-.201 1.072-.53 1.453-.987.326-.393.578-.839.756-1.339.178-.5.267-1.034.267-1.599 0-.712-.155-1.332-.467-1.859-.312-.528-.787-.921-1.424-1.179.44-.27.776-.611 1.005-1.024.23-.413.345-.885.345-1.415 0-.519-.089-1.002-.267-1.449-.178-.447-.45-.836-.818-1.166-.368-.33-.825-.578-1.37-.743C6.38 5.165 5.729 5 4.903 5H0v2.356zm2.504 1.927h2.24c.375 0 .67.037.887.109.217.073.392.192.524.357.132.166.198.38.198.643 0 .295-.078.538-.233.727-.156.189-.378.319-.664.391-.287.072-.617.108-.991.108H2.504V9.283zm0 4.734h2.536c.41 0 .752-.042 1.026-.126.275-.085.49-.217.643-.395.154-.178.23-.413.23-.704 0-.307-.083-.553-.249-.737-.166-.184-.396-.307-.691-.371-.295-.063-.636-.095-1.023-.095H2.504v2.428zm11.893-6.178v-1.03h-4.688v1.03h4.688zm2.303 7.66c-.563.41-1.268.614-2.116.614-.898 0-1.626-.214-2.184-.644-.558-.43-.888-1.077-.989-1.942H21c.024-.896-.062-1.7-.258-2.411-.196-.712-.513-1.309-.951-1.791-.438-.483-.986-.848-1.644-1.096-.658-.248-1.427-.371-2.307-.371-.817 0-1.554.12-2.213.36-.659.24-1.22.59-1.684 1.05-.464.46-.82 1.011-1.07 1.652-.25.641-.375 1.356-.375 2.144 0 .799.119 1.518.357 2.158.238.64.581 1.185 1.03 1.636.449.451 1.001.795 1.656 1.031.656.237 1.394.355 2.214.355 1.125 0 2.071-.254 2.836-.762.766-.508 1.314-1.263 1.646-2.267h-2.298c-.1.408-.324.726-.673.952zm-4.876-5.059c.426-.376.993-.563 1.698-.563.448 0 .825.073 1.131.217.306.145.553.332.742.563.188.23.316.474.385.73.07.257.108.506.115.749h-4.576c.082-.737.38-1.32.805-1.696h-.3z" />
+            </svg>
+          </a>
+        </nav>
+        <p class="footer-copy">&copy; <span id="year"></span> Sputnik Studio. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
