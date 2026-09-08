@@ -540,6 +540,15 @@ nav {
   box-shadow: 0 16px 40px rgba(108, 60, 233, 0.15);
 }
 
+/* Card entirely clickable via anchor */
+.card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
 .card-image-wrap {
   position: relative;
   aspect-ratio: 16 / 10;
